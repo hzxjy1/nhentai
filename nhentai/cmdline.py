@@ -133,6 +133,7 @@ def cmd_parser():
                       help='regenerate the cbz or pdf file if exists')
     parser.add_option('--no-metadata', dest='no_metadata', action='store_true', default=False,
                       help='don\'t generate metadata json file in doujinshi output path')
+    parser.add_option('--zip', action='store_true', help='Package into a single zip file')
 
     # nhentai options
     parser.add_option('--cookie', type='str', dest='cookie', action='store',
